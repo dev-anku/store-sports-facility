@@ -7,7 +7,8 @@ const product = require("../models/product.js");
 const upload = require("../config/multer.js");
 
 // TODO: Routes
-router.get("/products", productController.all_products);
-router.post("/products/create", protect, admin, upload.single("image"), productController.product_create);
+router.get("/products", productController.products);
+router.get("/products/:id", productController.products_detail);
+// router.post("/products/create", protect, admin, upload.single("image"), productController.product_create);
 
 module.exports = router;

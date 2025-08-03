@@ -3,9 +3,21 @@ const { body, validationResult } = require("express-validator");
 
 const Product = require("../models/product.js");
 
-exports.all_products = asyncHandler(async (req, res, next) => {
+exports.products = asyncHandler(async (req, res, next) => {
   const products = await Product.find({});
   res.status(200).json(products);
+});
+
+exports.products_detail = asyncHandler(async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
+
+  if (product === null) {
+    const err = new Error("Product not found");
+    err.status = 404;
+    return next(err);
+  }
+
+  res.status(200).json(product);
 });
 
 exports.product_create = [

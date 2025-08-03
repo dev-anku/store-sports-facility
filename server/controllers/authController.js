@@ -5,6 +5,10 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/user.js");
 
 exports.register = [
+  body("name", "Name should be longer than 3 letters.")
+    .trim()
+    .isLength({ min: 3 })
+    .escape(),
   body("email", "Email is required").trim().isEmail().normalizeEmail(),
   body("password", "Password must be atleast 6 characters")
     .trim()
@@ -16,7 +20,7 @@ exports.register = [
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { email, password } = req.body;
+    const { name, email, password } = req.body;
 
     const exists = await User.findOne({ email });
     if (exists) {
@@ -27,7 +31,7 @@ exports.register = [
 
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);
-    const user = await User.create({ email, password: hash });
+    const user = await User.create({ name, email, password: hash });
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "7d",
