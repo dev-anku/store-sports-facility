@@ -4,13 +4,13 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
-// import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100 font-inter">
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="container mx-auto p-4">
           <Routes>
             <Route path="/" element={<Home />} />
