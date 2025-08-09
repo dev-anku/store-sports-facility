@@ -104,3 +104,15 @@ exports.product_update = [
     }
   }),
 ];
+
+exports.product_delete = asyncHandler(async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
+
+  if (product) {
+    if (product.cloudinaryId) {
+      await cloudinary.uploader.destory(product.cloudinaryId);
+    }
+    await Product.deleteOne({ _id: req.params.id });
+    res.status(200).json({ message: "Product deleted successfully" });
+  }
+});
