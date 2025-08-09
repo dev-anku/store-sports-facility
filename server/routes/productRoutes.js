@@ -19,6 +19,6 @@ router
   .route("/:id")
   .get(productController.products_detail)
   .put(protect, admin, upload.single("image"), productController.product_update)
-  // .delete(protect, admin, productController.product_delete);
+  .delete(protect, admin, productController.product_delete);
 
 module.exports = router;
