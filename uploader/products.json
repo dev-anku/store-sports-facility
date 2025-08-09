@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Cross Trainer Double",
+    "description": "A durable outdoor cross trainer designed for two users, perfect for improving cardiovascular fitness, coordination, and endurance. Built with weather-resistant materials for long-lasting performance in open gyms and parks.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 16950,
+    "image": "./products/cross_trainer_double.png"
+  },
+  {
+    "name": "Bicycle",
+    "description": "An outdoor stationary bike for a full lower-body workout. Ideal for enhancing leg strength, stamina, and cardiovascular health. Features a sturdy frame and ergonomic design for comfortable use.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 9850,
+    "image": "./products/bicycle.png"
+  },
+  {
+    "name": "Elliptical Double",
+    "description": "Dual-user elliptical trainer providing a smooth, joint-friendly motion for cardio exercise. Great for improving heart health, burning calories, and strengthening muscles in both upper and lower body.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 27520,
+    "image": "./products/elliptical_double.png"
+  },
+  {
+    "name": "Sit & Stand Twister",
+    "description": "Versatile twister station for engaging the core muscles while standing or sitting. Helps improve flexibility, balance, and abdominal strength. Suitable for all age groups in public fitness areas.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 12320,
+    "image": "./products/sit_stand_twister.png"
+  },
+  {
+    "name": "Knee Hip Raise",
+    "description": "An effective outdoor fitness station for strengthening abdominal muscles, hip flexors, and core stability. Built for long-term use in outdoor environments.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 12980,
+    "image": "./products/knee_hip_raise.png"
+  },
+  {
+    "name": "Pull-Up Rack",
+    "description": "Heavy-duty pull-up rack designed for bodyweight training. Ideal for building upper body strength, endurance, and grip power. Supports a variety of pull-up and chin-up variations.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 13320,
+    "image": "./products/pull_up_rack.png"
+  },
+  {
+    "name": "Exercising Up Bar",
+    "description": "Multi-purpose upper body exercise bar for pull-ups, chin-ups, and hanging exercises. Perfect for developing arms, shoulders, chest, and back muscles.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 14862,
+    "image": "./products/exercising_up_bar.png"
+  },
+  {
+    "name": "Riding Trainer Double",
+    "description": "Dual-rider outdoor trainer that simulates cycling motion. Enhances cardiovascular endurance, leg strength, and coordination for two users simultaneously.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 19978,
+    "image": "./products/riding_trainer_double.png"
+  },
+  {
+    "name": "Triple Twister",
+    "description": "Three-station waist twister for group workouts. Improves flexibility, balance, and core strength while encouraging social interaction in outdoor gyms.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 12206,
+    "image": "./products/triple_twister.png"
+  },
+  {
+    "name": "Pull Chair Double",
+    "description": "Double-user pull chair machine for developing arm, shoulder, and chest muscles. Designed for smooth resistance and long-term durability.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 17822,
+    "image": "./products/pull_chair_double.png"
+  },
+  {
+    "name": "Rowing Machine",
+    "description": "Outdoor rowing station for a full-body workout targeting arms, back, core, and legs. Excellent for improving endurance and overall fitness.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 11954,
+    "image": "./products/rowing_machine.png"
+  },
+  {
+    "name": "Abdominal Exerciser",
+    "description": "Specialized equipment for toning and strengthening abdominal muscles. Supports core stability and posture improvement.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 15214,
+    "image": "./products/abdominal_excerciser.png"
+  },
+  {
+    "name": "Butterfly/Pec-Dec Chest Expander",
+    "description": "Dual-function chest expander for targeting chest, shoulders, and upper arms. Supports both butterfly and pec-dec movements for versatile training.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 17518,
+    "image": "./products/pec_dec_chest_expander.png"
+  },
+  {
+    "name": "Chest Press",
+    "description": "Sturdy outdoor chest press machine for building pectoral, shoulder, and triceps strength. Smooth resistance mechanism for effective workouts.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 18822,
+    "image": "./products/chest_press.png"
+  },
+  {
+    "name": "Weight Lifting Trainer",
+    "description": "Outdoor strength training station for lifting and pressing exercises. Ideal for building muscle mass and overall body strength.",
+    "category": "Open Gym Equipment",
+    "stock": 1,
+    "price": 13850,
+    "image": "./products/weight_lifting_trainer.png"
+  }
+]
+

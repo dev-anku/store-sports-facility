@@ -25,8 +25,10 @@ mongoose.connect(process.env.MONGODB).catch((err) => {
 });
 
 const authRoutes = require("./routes/authRoutes.js");
+const productRoutes = require("./routes/productRoutes.js");
 
 app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
 
 app.use(function (req, res, next) {
   next(createError(404));

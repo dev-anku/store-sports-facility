@@ -63,7 +63,12 @@ const Home = () => {
                 </h2>
                 <p className="text-gray-600 text-sm mb-3">{product.category}</p>
                 <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-green-700">${product.price.toFixed(2)}</span>
+                  <span className="text-2xl font-bold text-green-700">
+                    {Number(product.price).toLocaleString("en-IN", {
+                      style: "currency",
+                      currency: "INR"
+                    })}
+                  </span>
                   <span className={`text-sm font-medium ${product.stock > 0 ? 'text-green-500' : 'text-red-500'}`}>
                     {product.stock > 0 ? `In Stock (${product.stock})` : 'Out of Stock'}
                   </span>

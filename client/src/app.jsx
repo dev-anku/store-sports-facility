@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Navbar from "./components/Navbar.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
+import Cart from "./pages/Cart.jsx";
 
 const App = () => {
   return (
@@ -14,8 +16,8 @@ const App = () => {
         <main className="container mx-auto p-4">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
-            {/* <Route path="/cart" element={<Cart />} /> */}
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
