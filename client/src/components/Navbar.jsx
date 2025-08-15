@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
-  const { isAuthenticated, user, logout } = useAuth();
+  const { authenticated, user, logout } = useAuth();
   const { cartItems } = useCart();
 
   const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -43,7 +43,7 @@ const Navbar = () => {
             )}
           </Link>
 
-          {isAuthenticated ? (
+          {authenticated ? (
             <>
               {/* User is logged in */}
               <Link

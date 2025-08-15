@@ -86,7 +86,7 @@ exports.product_update = [
       product.description = description || product.description;
       product.price = price || product.price;
       product.category = category || product.category;
-      procut.stock = stock || product.stock;
+      product.stock = stock || product.stock;
 
       if (req.file) {
         if (product.cloudinaryId) {
