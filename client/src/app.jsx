@@ -7,6 +7,8 @@ import Register from "./pages/Register.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ProductDetail from "./pages/ProductDetail.jsx";
 import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import UserOrders from "./pages/UserOrders.jsx";
 
 const App = () => {
   return (
@@ -21,8 +23,8 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
-            {/* <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} /> */}
-            {/* <Route path="/orders" element={<ProtectedRoute><UserOrders /></ProtectedRoute>} /> */}
+            <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
+            <Route path="/orders" element={<ProtectedRoute><UserOrders /></ProtectedRoute>} />
 
             {/* <Route path="/admin" element={<ProtectedRoute adminOnly><AdminDashboard /></ProtectedRoute>} /> */}
 
